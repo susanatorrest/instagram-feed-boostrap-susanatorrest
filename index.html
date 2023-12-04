@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap instagram</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="#">
+        <i class="bi bi-instagram" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></i>
+        Instagram
+      </a>
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropend">
+          </ul>
+          <div class="d-flex">
+                <li><button type="button" class="btn btn-success ms-3 me-2" data-bs-toggle="modal" data-bs-target="#Modalpost">
+                  Create a new post
+                </button></li>
+                <div class="modal fade" id="Modalpost" tabindex="-1" aria-labelledby="ModalpostLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Caption:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                          </div>
+                          <button type="button" class="btn btn-outline-dark"><i class="bi bi-camera-fill"></i></button>
+                          <button type="button" class="btn btn-outline-dark"><i class="bi bi-geo-alt-fill"></i></i></button>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <li>
+                  <div class="dropdown me-4">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-gear-fill"></i>
+                    </button>
+                 
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- TABS RETICULA -->
+  <ul class="nav nav-tabs justify-content-center mt-3" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+    </li>
+   
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <section id="galeria" class="container-fluid mt-3 mb-0">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/1.jpg" alt="galeria-imagen">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/2.jpg" alt="galeria-imagen">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/3.jpg" alt="galeria-imagen">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/4.jpg" alt="galeria-imagen">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/5.jpg" alt="galeria-imagen">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/6.jpg" alt="galeria-imagen">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/7.jpg" alt="galeria-imagen">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/8.jpg" alt="galeria-imagen">
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="images/9.jpg" alt="galeria-imagen">
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <section id="lista" class="container justify-content-center">
+      <div class="row">
+        <div class="d-flex justify-content-center mt-3">
+        <div class="card w-50">
+          <div class="card-header d-flex align-items-center">
+            <h3 class="card-title">Trip 2023-January</h3>
+            <h5 class="card-date ms-auto">23/08</h5>
+          </div>
+          <img src="images/1.jpg" class="card-img-top" alt="galeria-imagen>
+        <div class=" card-body">
+          <h5 class="card-title pt-2 ms-2">230 likes</h5>
+          <p class="card-text mb-3 ms-2">Drone photography-Cerdanya.</p>
+        </div>
+      </div>
+  </div>
+
+    <div class="row">
+      <div class="d-flex justify-content-center mt-3">
+      <div class="card w-50">
+        <div class="card-header d-flex align-items-center">
+          <h3 class="card-title">Norway</h3>
+          <h5 class="card-date ms-auto">20/10</h5>
+        </div>
+        <img src="images/2.jpg" class="card-img-top" alt="galeria-imagen>
+      <div class=" card-body">
+        <h5 class="card-title pt-2 ms-2">390 likes</h5>
+        <p class="card-text mb-3 ms-2">Drone photography-Norway.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-center mt-3 mb-3">
+    <div class="card w-50">
+      <div class="card-header d-flex align-items-center">
+        <h3 class="card-title">Alaska</h3>
+        <h5 class="card-date ms-auto">03/11</h5>
+      </div>
+      <img src="images/3.jpg" class="card-img-top" alt="galeria-imagen>
+    <div class=" card-body">
+      <h5 class="card-title pt-2 ms-2">270 likes</h5>
+      <p class="card-text mb-3 ms-2">Drone photography-Alaska.</p>
+    </div>
+  </div>
+</div>
+  </div>
+  </section>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
